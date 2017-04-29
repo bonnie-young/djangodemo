@@ -22,16 +22,16 @@ def login(request):
         context = {"error_message": "User does not exist, Please register your account first."}
         return render(request, "account/register.html", context)
     if form_password == user_obj.password and user_obj.role == 1:
-        return HttpResponseRedirect(reverse('account:userlist', args=(user_obj.id,)))
+        return HttpResponseRedirect('/account/userlist')
     elif form_password == user_obj.password and user_obj.role == 2:
         return HttpResponseRedirect(reverse('account:userpofile', args=(user_obj.id)))
     else:
         context = {"error_message": "Password is wrong, please try again.", "name" : user_obj.name}
-        return render(request, "polls.index.html", context)
+        return render(request, "account/index.html", context)
 
 def register(request):
     pass
 
 def userlist(request):
     userlist = User.objects.all()
-    render(request, "account/register", {'userlist': userlist})
+    return render(request, "account/userlist.html", {'userlist': userlist})
