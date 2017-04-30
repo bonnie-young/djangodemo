@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbab0d05-22f5-4937-8994-b59f302f5a55" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/templates/account/userlist.html" afterPath="$PROJECT_DIR$/account/templates/account/userlist.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,20 +51,23 @@
       <file leaf-file-name="userlist.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/account/templates/account/userlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="51" column="117" lean-forward="false" selection-start-line="51" selection-start-column="117" selection-end-line="51" selection-end-column="117" />
+            <state relative-caret-position="361">
+              <caret line="32" column="88" lean-forward="true" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#a#1;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#833#839#0" expanded="true" />
+                <element signature="e#839#845#0" expanded="true" />
+                <element signature="e#845#851#0" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1480#1486#0" expanded="true" />
-                <element signature="e#1486#1492#0" expanded="true" />
-                <element signature="e#1492#1498#0" expanded="true" />
+                <element signature="e#1407#1413#0" expanded="true" />
+                <element signature="e#1413#1419#0" expanded="true" />
+                <element signature="e#1419#1425#0" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#1;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#2715#2721#1" expanded="true" />
-                <element signature="e#2739#2745#1" expanded="true" />
+                <element signature="e#2642#2648#1" expanded="true" />
+                <element signature="e#2666#2672#1" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -788,20 +790,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/account/templates/account/userlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="51" column="117" lean-forward="false" selection-start-line="51" selection-start-column="117" selection-end-line="51" selection-end-column="117" />
+        <state relative-caret-position="361">
+          <caret line="32" column="88" lean-forward="true" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#1;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#833#839#0" expanded="true" />
+            <element signature="e#839#845#0" expanded="true" />
+            <element signature="e#845#851#0" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1480#1486#0" expanded="true" />
-            <element signature="e#1486#1492#0" expanded="true" />
-            <element signature="e#1492#1498#0" expanded="true" />
+            <element signature="e#1407#1413#0" expanded="true" />
+            <element signature="e#1413#1419#0" expanded="true" />
+            <element signature="e#1419#1425#0" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#1;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2715#2721#1" expanded="true" />
-            <element signature="e#2739#2745#1" expanded="true" />
+            <element signature="e#2642#2648#1" expanded="true" />
+            <element signature="e#2666#2672#1" expanded="true" />
             <element signature="n#style#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
