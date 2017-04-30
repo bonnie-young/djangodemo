@@ -6,6 +6,6 @@ from django.contrib import admin
 # Register your models here.
 class UserAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'name', 'role')
+    list_display = ('id', 'name', 'role', 'createtime', 'updatetime')
 
 admin.site.register(User, UserAdmin)

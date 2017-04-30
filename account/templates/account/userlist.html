@@ -26,7 +26,7 @@
                 <div class="panel-heading">用户列表</div>
                 <div class="panel-body">
                     <a class="btn btn-default" type="button" style="margin: 0 0 10px 0;"
-                       href="#">添加用户
+                       href="/account/adduser/">添加用户
                     </a>
                     <br>
                     用户名称&nbsp;&nbsp;&nbsp;<input type="text" id="queryDeviceId"/>
@@ -40,6 +40,8 @@
                                 <td class="col-sm-1">ID</td>
                                 <td class="col-sm-1">用户名</td>
                                 <td class="col-sm-1">角色</td>
+                                <td class="col-sm-1">创建时间</td>
+                                <td class="col-sm-1">更新时间</td>
                                 <td class="col-sm-1">操作</td>
                             </tr>
                             </thead>
@@ -49,7 +51,13 @@
                                 <td class="col-auto" align="center"> {{ user.id }}</td>
                                 <td class="col-auto" align="center"> {{ user.name }}</td>
                                 <td class="col-auto" align="center"> {{ user.role }}</td>
-                                <td class="col-auto" align="center"> <a href="#">编辑</a>&nbsp;<a href="#">查看</a>&nbsp;<a href="#">删除</a></td>
+                                <td class="col-auto" align="center"> {{ user.createtime|date:"Y-m-d H:i"}}</td>
+                                <td class="col-auto" align="center"> {{ user.updatetime|date:"Y-m-d H:i"}}</td>
+                                <td class="col-auto" align="center">
+                                    <a href="/account/updateuser/id={{user.id}}/">编辑</a>&nbsp;
+                                    <a href="/account/userdetail/id={{user.id}}/">查看</a>&nbsp;
+                                    <a href="/account/deluser/id={{user.id}}/">删除</a>
+                                </td>
                             </tr>
                             {% endfor %}
                             </tbody>
