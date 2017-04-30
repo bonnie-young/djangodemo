@@ -18,18 +18,19 @@
 <form>
     <div class="container">
         <div id="logout" class="col-sm-12" style="margin-top: 20px;">
-            <a href="#"><div   style="margin: 1px 1px 10px 1px;float:right;text-align: center;font-size: 12px;font-weight: bold" class="btn btn-primary">退出</div></a>
+            <a href="#"><div   style="margin: 1px 1px 10px 1px;float:right;text-align: center;font-size: 12px;font-weight: bold" class="btn btn-default">Admin</div></a>
+            <a href="#"><div   style="margin: 1px 1px 10px 1px;float:right;text-align: center;font-size: 12px;font-weight: bold" class="btn btn-default">退出</div></a>
         </div>
         <div class="col-sm-12" style="margin-top: 20px;align-content: center">
-            <div class="panel panel-default panel-primary">
+            <div class="panel panel-default">
                 <div class="panel-heading">用户列表</div>
                 <div class="panel-body">
-                    <a class="btn btn-primary" type="button" style="margin: 0 0 10px 0;"
+                    <a class="btn btn-default" type="button" style="margin: 0 0 10px 0;"
                        href="#">添加用户
                     </a>
                     <br>
                     用户名称&nbsp;&nbsp;&nbsp;<input type="text" id="queryDeviceId"/>
-                    <a class="btn btn-primary" type="button" style="margin: 0 0 10px 0;"
+                    <a class="btn btn-default" type="button" style="margin: 0 0 10px 0;"
                        href="#">筛选
                     </a>
                     <div class="panel panel-default panel-info">
@@ -45,10 +46,10 @@
                             <tbody>
                             {% for user in userlist %}
                             <tr>
-                                <td class="col-auto"> {{ user.id }}</td>
-                                <td class="col-auto"> {{ user.name }}</td>
-                                <td class="col-auto"> {{ user.role }}</td>
-                                <td class="col-auto"> <a href="#">编辑</a><a href="#">查看</a><a href="#">删除</a></td>
+                                <td class="col-auto" align="center"> {{ user.id }}</td>
+                                <td class="col-auto" align="center"> {{ user.name }}</td>
+                                <td class="col-auto" align="center"> {{ user.role }}</td>
+                                <td class="col-auto" align="center"> <a href="#">编辑</a>&nbsp;<a href="#">查看</a>&nbsp;<a href="#">删除</a></td>
                             </tr>
                             {% endfor %}
                             </tbody>
@@ -59,7 +60,7 @@
             </div>
         </div>
         <div align="right" style="margin-right: 16px">
-            <a class="btn btn-primary" onclick="javascript:history.go(-1);">返回</a>
+            <a class="btn btn-default" onclick="javascript:history.go(-1);">返回</a>
         </div>
     </div>
 </form>
