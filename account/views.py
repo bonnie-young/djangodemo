@@ -19,8 +19,8 @@ def login(request):
         user_obj = User.objects.get(name=form_name)
         request.session['user_id'] = user_obj.id
     except:
-        context = {"error_message": "User does not exist, Please register your account first."}
-        return render(request, "account/register.html", context)
+        context = {"error_message": "Please enter your name and password"}
+        return render(request, "account/index.html", context)
     if form_password == user_obj.password and user_obj.role == 1:
         return HttpResponseRedirect('/account/userlist')
     elif form_password == user_obj.password and user_obj.role == 2:
@@ -29,8 +29,16 @@ def login(request):
         context = {"error_message": "Password is wrong, please try again.", "name" : user_obj.name}
         return render(request, "account/index.html", context)
 
+def logout(request):
+    try:
+        del request.session['user_id']
+    except KeyError:
+        pass
+    context = {"error_message" : "You are logged out"}
+    return render(request, 'account/index.html', context)
+
 def register(request):
-    pass
+    return render(request, 'account/register.html', {})
 
 def userlist(request):
     userlist = User.objects.all()
