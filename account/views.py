@@ -20,7 +20,10 @@ def login(request):
         user_obj = User.objects.get(name=form_name)
         request.session['user_id'] = user_obj.id
     except:
-        context = {"error_message": "Please enter your name and password"}
+        context = {"error_message": "User does not exist!"}
+        return render(request, "account/index.html", context)
+    if form_name == "" or form_password == "":
+        context = {"error_message": "Please enter your name and password!"}
         return render(request, "account/index.html", context)
     if form_password == user_obj.password and user_obj.role == 1:
         return HttpResponseRedirect('/account/userlist')
@@ -69,6 +72,7 @@ def saveupdateuser(request, user_id):
     f = UserForm(request.POST, instance=a)
     f.save()
     userlist = User.objects.all().order_by("-id")
+#    return HttpResponseRedirect(reverse('account:userlist', args=(userlist,)))
     return render(request, "account/userlist.html", {"userlist": userlist})
 
 def userprofile(request, user_id):
